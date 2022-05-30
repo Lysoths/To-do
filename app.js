@@ -3,6 +3,10 @@ const button1 = document.getElementById("add");
 const button2 = document.getElementById("remove");
 const boxContainer = document.querySelector(".box-container");
 
+const newArray = boxContainer.children;
+console.log(newArray);
+
+
 button1.addEventListener("click", () => {
     var inputValue = document.querySelector("input").value; 
     var box = document.createElement("div");
@@ -21,8 +25,10 @@ button1.addEventListener("click", () => {
 })
 
 button2.addEventListener("click", () => {
-   const box = document.querySelector(".box");
-   box.remove();
+   const box = container.children;
+   const boxLenght = box.length;
+   console.log(boxLenght);
+   box[boxLenght-1].remove();
    
     })
 
